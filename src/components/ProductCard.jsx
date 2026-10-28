@@ -4,7 +4,7 @@ const ProductCard = ({product}) => {
             <p>{product.category}</p>
             <h3>{product.name}</h3>
 
-            <p>{product.price.toLocaleString("ko-KR원")}</p>
+            <p>{product.price.toLocaleString('ko-KR')}원</p>
         </div>
     )
 }

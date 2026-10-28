@@ -4,48 +4,14 @@ import ProductCard from "./ProductCard"
 
 const ProductList = ({product}) => {
 
-    return(
-        <div className="product-list">
-                <h2>상품 리스트</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            번호
-                        </th>
-                        <th>
-                            상품명
-                        </th>
-                        <th>
-                            가격
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-            {products.map((product) =>(
-                    <tr key={product.id}>
-                        <td>{product.id}</td>
-                        <td>
-                            {product.name}
-                        </td>
-                        <td>{product.price}</td>
-                        
-                
-                    </tr>
-            ))} 
-
-
-                </tbody>
-
-
-
-            </table>
-        </div>
-
-        
-    )
-
-    
+  <section>
+    <h2>상품 목록</h2>
+    <div className="product-list">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  </section>
 
 }
 

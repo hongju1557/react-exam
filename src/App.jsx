@@ -20,8 +20,8 @@ function App() {
       <Link to="/notice">공지사항</Link>
     </div>
     <Routes>
-      <Route path='/productlist' element={<ProductList product={products}/>}></Route>
-      {/* <Route path='/notice' element={<Notice/>}></Route> */}
+      <Route path='/' element={<ProductList product={products}/>}></Route>
+      <Route path='/notice' element={<Notice/>}></Route>
     </Routes>
     </BrowserRouter>
     {/* <LikeButton></LikeButton>
