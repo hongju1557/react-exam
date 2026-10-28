@@ -21,7 +21,7 @@ function App() {
     </div>
     <Routes>
       <Route path='/productlist' element={<ProductList product={products}/>}></Route>
-      <Route path='/notice' element={<Notice/>}></Route>
+      {/* <Route path='/notice' element={<Notice/>}></Route> */}
     </Routes>
     </BrowserRouter>
     {/* <LikeButton></LikeButton>
